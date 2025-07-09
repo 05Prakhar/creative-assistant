@@ -28,7 +28,7 @@ const Index = () => {
           className={`px-3 py-1 rounded text-sm transition-all ${
             currentView === "hero" 
               ? "bg-white text-primary" 
-              : "text-white hover:bg-white/20"
+              : "text-white/90 hover:bg-white/20 hover:text-white"
           }`}
         >
           Hero
@@ -38,7 +38,7 @@ const Index = () => {
           className={`px-3 py-1 rounded text-sm transition-all ${
             currentView === "assessment" 
               ? "bg-white text-primary" 
-              : "text-white hover:bg-white/20"
+              : "text-white/90 hover:bg-white/20 hover:text-white"
           }`}
         >
           Assessment
@@ -48,7 +48,7 @@ const Index = () => {
           className={`px-3 py-1 rounded text-sm transition-all ${
             currentView === "dashboard" 
               ? "bg-white text-primary" 
-              : "text-white hover:bg-white/20"
+              : "text-white/90 hover:bg-white/20 hover:text-white"
           }`}
         >
           Dashboard
