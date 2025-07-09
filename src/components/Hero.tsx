@@ -35,7 +35,7 @@ export function Hero() {
               Start Your Journey
               <ArrowRight className="w-5 h-5" />
             </Button>
-            <Button variant="outline" size="xl" className="border-white/30 text-white hover:bg-white/10">
+            <Button variant="ghost" size="xl" className="border border-white/30 text-white hover:bg-white/10 hover:text-white">
               <BookOpen className="w-5 h-5" />
               View Demo
             </Button>
