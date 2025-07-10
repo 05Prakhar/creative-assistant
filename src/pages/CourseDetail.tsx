@@ -216,12 +216,21 @@ const CourseDetail = () => {
                             </CardDescription>
                           </div>
                         </div>
-                        <Button 
-                          variant={week.current ? "default" : week.completed ? "outline" : "ghost"}
-                          size="sm"
-                        >
-                          {week.completed ? "Review" : week.current ? "Continue" : "Start"}
-                        </Button>
+                        <div className="flex gap-2">
+                          {week.current && (
+                            <Link to={`/courses/${courseId}/assignment`}>
+                              <Button variant="outline" size="sm">
+                                Submit Assignment
+                              </Button>
+                            </Link>
+                          )}
+                          <Button 
+                            variant={week.current ? "default" : week.completed ? "outline" : "ghost"}
+                            size="sm"
+                          >
+                            {week.completed ? "Review" : week.current ? "Continue" : "Start"}
+                          </Button>
+                        </div>
                       </div>
                     </CardHeader>
                   </Card>
