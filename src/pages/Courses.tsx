@@ -245,13 +245,17 @@ const Courses = () => {
                         </div>
                       </div>
                       <div className="flex gap-2">
-                        <Button className="flex-1 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                          <Play className="h-4 w-4 mr-2" />
-                          Start Course
-                        </Button>
-                        <Button variant="outline" size="icon">
-                          <ArrowRight className="h-4 w-4" />
-                        </Button>
+                        <Link to={`/courses/${category.id}-${index}`} className="flex-1">
+                          <Button className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                            <Play className="h-4 w-4 mr-2" />
+                            Start Course
+                          </Button>
+                        </Link>
+                        <Link to={`/courses/${category.id}-${index}`}>
+                          <Button variant="outline" size="icon">
+                            <ArrowRight className="h-4 w-4" />
+                          </Button>
+                        </Link>
                       </div>
                     </CardContent>
                   </Card>
