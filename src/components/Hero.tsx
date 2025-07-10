@@ -1,5 +1,6 @@
 import { ArrowRight, BookOpen, Target, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export function Hero() {
   return (
@@ -31,10 +32,12 @@ export function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <Button variant="hero" size="xl" className="bg-white text-primary hover:bg-white/90">
-              Start Your Journey
-              <ArrowRight className="w-5 h-5" />
-            </Button>
+            <Link to="/courses">
+              <Button variant="hero" size="xl" className="bg-white text-primary hover:bg-white/90">
+                Explore Courses
+                <ArrowRight className="w-5 h-5" />
+              </Button>
+            </Link>
             <Button variant="ghost" size="xl" className="border border-white/30 text-white hover:bg-white/10 hover:text-white">
               <BookOpen className="w-5 h-5" />
               View Demo
