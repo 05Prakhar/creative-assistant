@@ -1,6 +1,10 @@
 # Welcome to your Lovable project
 
-## Project info
+## Project Published Link
+
+**URL**: https://creative-assistant.lovable.app
+
+## Project Info
 
 **URL**: https://lovable.dev/projects/232c78fb-0101-4ce8-a751-87fd9f06b2ec
 
