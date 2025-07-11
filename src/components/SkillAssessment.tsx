@@ -75,11 +75,26 @@ export function SkillAssessment() {
 
   const renderSkillLevel = (skill: Skill) => {
     const levels = ["beginner", "intermediate", "advanced", "expert"];
-    const levelColors = {
-      beginner: "learning-beginner",
-      intermediate: "learning-intermediate", 
-      advanced: "learning-advanced",
-      expert: "learning-expert"
+
+    const getButtonStyles = (level: string) => {
+      const isSelected = selectedSkills[skill.id] === level;
+      
+      if (isSelected) {
+        switch (level) {
+          case "beginner":
+            return "bg-learning-beginner text-white";
+          case "intermediate":
+            return "bg-learning-intermediate text-white";
+          case "advanced":
+            return "bg-learning-advanced text-white";
+          case "expert":
+            return "bg-learning-expert text-white";
+          default:
+            return "bg-primary text-primary-foreground";
+        }
+      }
+      
+      return "bg-muted text-muted-foreground hover:bg-muted/80 hover:text-foreground";
     };
 
     return (
@@ -88,11 +103,7 @@ export function SkillAssessment() {
           <button
             key={level}
             onClick={() => handleSkillSelect(skill.id, level)}
-            className={`p-2 rounded-lg text-xs font-medium transition-all ${
-              selectedSkills[skill.id] === level
-                ? `bg-${levelColors[level as keyof typeof levelColors]} text-white`
-                : "bg-muted hover:bg-muted/80"
-            }`}
+            className={`p-2 rounded-lg text-xs font-medium transition-all ${getButtonStyles(level)}`}
           >
             {level.charAt(0).toUpperCase() + level.slice(1)}
           </button>
