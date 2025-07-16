@@ -4,8 +4,7 @@
 
 CreativeLab is an AI-powered learning platform that provides personalized skill development paths for creative professionals. The platform combines traditional course structures with intelligent recommendations and adaptive learning experiences.
 
-**Published URL**: https://creative-assistant.lovable.app  
-**Project URL**: https://lovable.dev/projects/232c78fb-0101-4ce8-a751-87fd9f06b2ec
+**Published URL**: https://creative-assistant.lovable.app
 
 ## Current Implementation Status
 
